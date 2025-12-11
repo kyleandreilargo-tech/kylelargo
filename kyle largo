@@ -1,0 +1,105 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle Andrei Largo – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kyle Andrei Largo</h1>
+    <p>Fresh IT Graduate • Junior IT Support • Tech Enthusiast</p>
+  </header>
+
+  <section id="about"></section>
+  <section id="skills"></section>
+  <section id="experience"></section>
+  <section id="contact"></section>
+
+  <footer>
+    <p>© 2025 Kyle Andrei Largo – Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- style.css -->
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+header {
+  background: #0a3d62;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h2 {
+  color: #0a3d62;
+}
+ul {
+  padding-left: 20px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+}
+
+
+<!-- script.js -->
+// Fill webpage content dynamically
+
+document.getElementById("about").innerHTML = `
+  <h2>About Me</h2>
+  <p>Hello! I am a fresh IT graduate driven by curiosity and a genuine passion for helping people solve technical problems. I enjoy troubleshooting, supporting users, and learning new technologies.</p>
+  <p>During my internship, I gained hands-on experience in hardware diagnostics, procurement coordination, inventory updates, and assisting employees both remotely and onsite.</p>
+  <p>My goal is to grow in technical support, system administration, and networking while continuously improving my skills.</p>
+`;
+
+document.getElementById("skills").innerHTML = `
+  <h2>Skills</h2>
+  <ul>
+    <li>Hardware Troubleshooting & Diagnostics</li>
+    <li>Software Installation & Updates</li>
+    <li>Network Support & Basic Configuration</li>
+    <li>Technical Documentation</li>
+    <li>Inventory Management & IT Procurement Assistance</li>
+    <li>Remote and Onsite Technical Assistance</li>
+    <li>RAM Upgrades & Device Setup</li>
+  </ul>
+`;
+
+document.getElementById("experience").innerHTML = `
+  <h2>Experience</h2>
+  <ul>
+    <li>Assisted IT department with hardware diagnostics and software installation</li>
+    <li>Provided remote and onsite support to employees</li>
+    <li>Handled IT procurement coordination and device inventory updates</li>
+    <li>Tested and validated a Python-built inventory tool</li>
+    <li>Performed RAM upgrades and troubleshooting</li>
+  </ul>
+`;
+
+document.getElementById("contact").innerHTML = `
+  <h2>Contact</h2>
+  <p>Email: kyleandreilargo@gmail.com</p>
+  <p>Phone: 09260487287</p>
+  <p>Location: Philippines</p>
+`;
